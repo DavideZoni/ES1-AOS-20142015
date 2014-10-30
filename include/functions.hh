@@ -8,7 +8,7 @@
 int doCountSubstrings();
 void doStringReverse();
 void doCountVowel();
-void doWordCount();
+int doWordCount();
 
 
 void doToUpperCase();

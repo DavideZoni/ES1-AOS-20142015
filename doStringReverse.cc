@@ -7,20 +7,18 @@
 
 void doStringReverse()
 {
-	std::cout << "String reverse function " << std::endl;
-
-	std::string Stringa = "";
-	std::string reversedString = "";
-
-	std::cout<<"String To Reverse=";
-	std::getline(std::cin,Stringa);
-	//assert(substr.size()>0&&substr.size()<10);
-
-	for (int i = Stringa.size()-1; i >= 0; i--){
-	    reversedString += Stringa[i];
-	}
-
-	std::cout << "Stringa: " << Stringa << " Stringa Rovesciata: " << reversedString << std::endl;
+    std::cout<<"\n\n ************ doStringReverse ['q' to exit]"<<std::endl;
+    std::string str;
+    int lenght = 0;
+    
+    std::cout<<"string=";
+    std::getline(std::cin,str);
+    assert(str.size()>0);
+    while(lenght<= str.size() && str!="q"){
+        std::cout<<str[str.size() - lenght];
+        lenght++;
+    }
+    std::cout<<"\n";
 }
 
 
